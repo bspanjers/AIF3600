@@ -343,7 +343,7 @@ class LRwPRObjetiveType4Mixin(LRwPR):
         # likelihood
         # \sum_{x,s,y in D} y log(sigma) + (1 - y) log(1 - sigma)
         l = np.sum(y * np.log(p) + (1.0 - y) * np.log(1.0 - p))
-
+        print (len(y))
         # fairness-aware regularizer
         # \sum_{x,s in D} \
         #    sigma(x,x)       [log(rho(s))     - log(pi)    ] + \
